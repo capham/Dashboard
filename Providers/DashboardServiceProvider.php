@@ -3,6 +3,7 @@
 namespace Modules\Dashboard\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Arr;
 use Modules\Core\Events\BuildingSidebar;
 use Modules\Core\Events\LoadingBackendTranslations;
 use Modules\Core\Traits\CanGetSidebarClassForModule;
@@ -47,7 +48,7 @@ class DashboardServiceProvider extends ServiceProvider
         );
 
         $this->app['events']->listen(LoadingBackendTranslations::class, function (LoadingBackendTranslations $event) {
-            $event->load('dashboard', array_dot(trans('dashboard::dashboard')));
+            $event->load('dashboard', Arr::dot(trans('dashboard::dashboard')));
         });
     }
 
