@@ -1,5 +1,5 @@
 {
-  "name": "idavoll/dashboard-module",
+  "name": "capham/dashboard-module",
   "type": "asgard-module",
   "description": "Dashboard module for AsgardCMS. Handles the display of the dashboard.",
   "keywords": [
@@ -8,6 +8,10 @@
   ],
   "license": "MIT",
   "authors": [
+    {
+      "name": "Ca Pham",
+      "email": "capham89@gmail.com"
+    },
     {
       "name": "Nicolas Widart",
       "email": "info@asgardcms.com",
@@ -25,11 +29,6 @@
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^2.12"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "4.0.x-dev"
-    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true
